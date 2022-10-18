@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOBPORTAL | HOME</title>
+       <div class="msg">{{ msg }}</div>
+    <meta charset="UTF-8">
+        <!-- favicon -->
+        <!-- <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon"> -->
+        <!-- <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon"> -->
+        <link rel="icon" type="/image/png" sizes="16x16" href="/assets/img/favicon-32x32.png">
+        <!-- bootstrap css cdn -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <!-- css stylesheet -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- font styles cdn -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+        <!-- bootstrap navbar -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="main-logo-img mt-3" href="#"><img src="static/img/smartinternz.png" alt="sheep-logo" height="50px" width="180px">
+                <!-- <a class="navbar-brand" href="index.html">JobPortal</a> -->
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+             
+              <div class="row donate-sponsor">
+                <a type="button" class="btn btn-success mr-1" id="donate" href="/logout">LOGOUT</a>
+                <a type="button" class="btn btn-warning mr-1" id="sponsor" href="register">REGISTER</a>
+                <a type="button" class="btn btn-primary mr-1" id="sponsor" href="display">MY JOBS</a>
+              </div>
+            </div>
+          </nav>
+          <!-- navbar ends -->
+
+        <!-- what we focus on -->
+        <section class="our-focus">
+            <div class="container">
+              <h2 class="text-center mt-3">Your details</h2>
+              <div class="border">
+							<table class="worddark"></br></br></br></br>
+								<tr>
+									<td>userid:</td>
+									<td>{{ account[0] }}</td>
+								</tr>
+								<tr>
+									<td>username:</td>
+									<td>{{ account[1] }}</td>
+								</tr>
+								<tr>
+									<td>Email ID:</td>
+									<td>{{ account[2] }}</td>
+								</tr>
+								<tr>
+									<td>qualification:</td>
+									<td>{{ account[3] }}</td>
+								</tr>
+								<tr>
+									<td>skills:</td>
+									<td>{{ account[4] }}</td>
+								</tr>
+								<tr>
+									<td>JOB Applied:</td>
+									<td>{{ account[5] }}</td>
+								</tr>
+								
+											
+							</table>
+              
+          </section>
+         
+</body>
+</html>
